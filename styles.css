@@ -42,19 +42,7 @@ body {
     border-radius: 8px;
     min-height: 80vh; /* Ensure the container is tall enough */
   }
-  
-  /*     /* Profile image styling */
-  /*     img:first-of-type {
-  /*       max-width: 200px; /* Fixed size instead of percentage */
-  /*       height: 200px; /* Fixed height for perfect circle */
-  /*       display: block;
-  /*       margin: 0 auto 20px auto;
-  /*       border-radius: 50%; /* Make it perfectly round */
-  /*       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  /*       object-fit: cover; /* Ensures the image fills the circle without distortion */
-  /*      /* border: 3px solid white; /* Optional: adds a white border */
-  /*     }
-  
+
 
 /* For images in project pages */
 
@@ -69,20 +57,6 @@ body {
   /* border: 3px solid white; */
 }
 
-
-
-
-
-
-/*.pj-img {
-/*  max-width: max-content;
-/*  height: max-content;
-/*  object-fit: contain;
-/*  border-radius: 0;       /* Reset the round shape */
-/*  box-shadow: none;       /* Optional: remove shadow if inherited */
-/*  display: block;         /* Avoid `contents` unless absolutely needed */
-/*  margin: 1em auto;       /* Optional: center the image */
-/*}
 
 
   /* Social links with Iconify icons */
@@ -245,25 +219,6 @@ div[style="padding: 1em;"] {
 }
 
 
-
-
-/* In-progress tcircle */
-
-/*    .project-card.inprogress::after {
-/*      content: "";
-/*      position: absolute;
-/*      top: 8px;
-/*      right: 8px;
-/*      width: 16px;
-/*      height: 16px;
-/*      border: 2px solid gray;
-/*      border-top-color: transparent;
-/*      border-radius: 50%;
-/*      animation: spin 0.8s linear infinite;
-/*    }
-/*    @keyframes spin {
-/*      to { transform: rotate(360deg); }
-/*    } */
 
 
 .project-card::after {
