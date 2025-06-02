@@ -1,0 +1,428 @@
+/* css styles */
+/* Import Alice font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+
+.listing-grid {
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+
+/* Apply background image to the entire body */
+body {
+  /*background-color: #35464a;*/
+  background-color: #2e3440;
+    /*background-image: url('images/water_dark.png'); /* Replace with your background image path */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white; /* Changed text color to white */
+    font-family: 'Alice', serif; /* Changed font to Alice */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  h1{
+    text-align: center;
+    font-size: 45px;
+  }
+
+
+
+  
+  /* Main content container */
+  body > .quarto-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Changed to darker semi-transparent background */
+    border-radius: 8px;
+    min-height: 80vh; /* Ensure the container is tall enough */
+  }
+  
+  /*     /* Profile image styling */
+  /*     img:first-of-type {
+  /*       max-width: 200px; /* Fixed size instead of percentage */
+  /*       height: 200px; /* Fixed height for perfect circle */
+  /*       display: block;
+  /*       margin: 0 auto 20px auto;
+  /*       border-radius: 50%; /* Make it perfectly round */
+  /*       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /*       object-fit: cover; /* Ensures the image fills the circle without distortion */
+  /*      /* border: 3px solid white; /* Optional: adds a white border */
+  /*     }
+  
+
+/* For images in project pages */
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  /* border: 3px solid white; */
+}
+
+
+
+
+
+
+/*.pj-img {
+/*  max-width: max-content;
+/*  height: max-content;
+/*  object-fit: contain;
+/*  border-radius: 0;       /* Reset the round shape */
+/*  box-shadow: none;       /* Optional: remove shadow if inherited */
+/*  display: block;         /* Avoid `contents` unless absolutely needed */
+/*  margin: 1em auto;       /* Optional: center the image */
+/*}
+
+
+  /* Social links with Iconify icons */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Increased spacing between icons */
+    margin-top: 40px;
+    padding: 30px 0;
+    width: 100%;
+  }
+  
+  .social-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* White icons */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for contrast */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .social-links a:hover {
+    transform: scale(1.15);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Style the Iconify icons to be large */
+  .social-links .iconify {
+    width: 32px;
+    height: 32px;
+    color: white; /* Icons are white */
+  }
+  
+  /* Override any Solana template styles that might interfere */
+  .quarto-title-meta {
+    display: none;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    background-color: #d9d9d9; /* Grey background */
+    padding: 10px 30px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-weight: bold;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000; /* Black text */
+    transition: color 0.3s;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .navbar a:hover {
+    color: #ffffff; /* White text on hover */
+    background-color: rgba(0, 0, 0, 0.2); /* Subtle background change on hover */
+  }
+  
+
+  .navbar {
+    display: flex;
+    justify-content: center; /* Centers the navbar items */
+  }
+  
+  .navbar a {
+    font-size: 30px;
+    font-weight: normal; /* Makes the text bold */
+  }
+
+  /* Text color override for Welcome section */
+  /* Add margins to the welcome text section */
+div[style="padding: 1em;"] {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify; /* Optional: for even text distribution */
+  }
+  
+
+  div[style="padding: 1em;"] {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: justify; /* Optional: for even text distribution */
+  }
+
+
+  div[style="background-color: #f0f0f0; color: black; padding: 1em;"]{
+    color: black;
+   /* margin-left: 10%;   */
+   /* margin-right: 10%;*/
+    text-align: justify; /* Optional: for even text distribution */
+  }
+  
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    border-image-outset: inherit;
+    padding: 1rem;
+    justify-content: center;
+  }
+  
+  .project-card {
+    position: relative;
+    flex: 0 0 calc(33.333% - 1.5rem);
+    margin: 0;
+  }
+  
+  /* your cards styling */
+  .project-card {
+    display: block;
+    background-color: #d9d9d9;
+   /* background-color: rgba(255,255,255,0.1);*/
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+  }
+  
+
+  .project-card.completed::after {
+    content: "\2714"; /* Unicode check mark */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 3rem;
+    color: green;
+  }
+
+/* In-progress three-dot animation */
+ .project-card.inprogress::after {
+   content: "";
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   width: 1em;
+   font-size: 2rem;
+   color: gray;
+   animation: ellipsis 1s steps(4, end) infinite;
+ }
+@keyframes ellipsis {
+  0% { content: ""; }
+  25% { content: "."; }
+  50% { content: ".."; }
+  75% { content: "..."; }
+  100% { content: ""; }
+}
+
+
+
+
+/* In-progress tcircle */
+
+/*    .project-card.inprogress::after {
+/*      content: "";
+/*      position: absolute;
+/*      top: 8px;
+/*      right: 8px;
+/*      width: 16px;
+/*      height: 16px;
+/*      border: 2px solid gray;
+/*      border-top-color: transparent;
+/*      border-radius: 50%;
+/*      animation: spin 0.8s linear infinite;
+/*    }
+/*    @keyframes spin {
+/*      to { transform: rotate(360deg); }
+/*    } */
+
+
+.project-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255,255,255,0.4);
+  transition: none;
+}
+
+.project-card:hover::after {
+  width: 120%;
+  background-color: rgba(255,255,255,0);
+  transition: all 0.4s ease-in-out;
+}
+
+
+
+
+
+
+
+
+  .project-card img {
+    width: 100%;
+    height: 200px;
+    /*object-fit: cover;*/
+    border-radius: 5px;
+    object-fit: contain;
+  }
+  
+  .card-title {
+    margin: 1rem;
+    font-size: 1.2rem;
+     /*color: white;*/
+     color: black;
+  }
+  
+  .card-text {
+    margin: 0 1rem 1rem;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+    display: -webkit-box; /* for line clamping */
+    -webkit-box-orient: vertical; /* for line clamping */
+    -webkit-line-clamp: 2; /* limit to 2 lines */
+    overflow: hidden; /* hide overflow */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 900px) {
+    .project-card {
+      flex: 0 0 calc(50% - 1rem);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .project-card {
+      flex: 0 0 100%;
+    }
+  }
+  
+
+  
+  /* Make content responsive */
+  @media (max-width: 768px) {
+    body > .quarto-container {
+      padding: 15px;
+      margin: 15px;
+    }
+    
+    .navbar {
+      padding: 10px;
+    }
+    
+    .social-links {
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    
+    .social-links a {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .social-links .iconify {
+      width: 26px;
+      height: 26px;
+    }
+    
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+/* for the software */
+.software-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.software-card {
+  position: relative; /* <<< This is essential */
+  display: flex; /* changed from block */
+  background-color: #d9d9d9;
+  border-radius: 15px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: background-color 0.5s ease;
+  width: 100%; /* take full row or adjust as needed */
+  max-width: 800px;
+}
+
+/* Image container inside card */
+.software-card img {
+  width: 40%; /* adjust as needed */
+  object-fit: cover;
+  height: 100%;
+  display: block;
+}
+
+/* Text container inside card */
+.software-card .card-content {
+  padding: 1rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+.software-card:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255,255,255,0.4);
+	-webkit-transition: none;
+	   -moz-transition: none;
+	        transition: none;
+}
+.software-card:hover:after {
+  width: 120%;
+  background-color: rgba(255,255,255,0);
+  
+	-webkit-transition: all 0.4s ease-in-out;
+	   -moz-transition: all 0.4s ease-in-out;
+	        transition: all 0.4s ease-in-out;
+}
+  

@@ -1,0 +1,109 @@
+
+/* Navbar styling */
+.navbar {
+  background-color: #d9d9d9; /* Grey background */
+  padding: 10px 30px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-weight: bold;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000000; /* Black text */
+  transition: color 0.3s;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.navbar a:hover {
+  color: #ffffff; /* White text on hover */
+  background-color: rgba(0, 0, 0, 0.2); /* Subtle background change on hover */
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center; /* Centers the navbar items */
+}
+
+.navbar a {
+  font-size: 30px;
+  font-weight: normal; /* Makes the text bold */
+}
+
+  body {
+    /*background-color: #35464a;*/
+    background-color: #2e3440;
+
+    /*background-image: url('images/water_dark.png'); /* Replace with your background image path */
+   background-size: cover;
+   /* background-attachment: fixed;*/
+    /* background-position: center; */
+    color: white; /* Changed text color to white */
+    font-family: 'Alice', serif; /* Changed font to Alice */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Fix for leaflet map */
+  .leaflet-container {
+    background: transparent !important;
+    width: 100% !important;
+    height: 600px !important;
+  }
+  
+  .leaflet-tile-pane {
+    opacity: 1 !important;
+  }
+  
+  .map-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  /* Ensure map controls are visible against dark background */
+  .leaflet-control-container .leaflet-control {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 4px;
+  }
+  
+/* turn off Quarto’s circle mask on any figure or .q-figure container */
+figure, 
+.q-figure {
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+}
+
+
+figure.q-figure {
+  /* turn off the round mask */
+  clip-path: none !important;
+  -webkit-clip-path: none !important;
+  /* make sure it doesn’t hide anything you actually want visible */
+  overflow: visible !important;
+}
+
+/* if you want to be extra-safe and hit the leaflet container itself */
+figure.q-figure .leaflet-container {
+  clip-path: none !important;
+  overflow: visible !important;
+}
+
+
+
+
+  /* Ensure attribution is visible */
+  /*.leaflet-control-attribution {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    color: #333 !important;
+  }

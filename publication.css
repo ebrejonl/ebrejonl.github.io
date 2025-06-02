@@ -1,0 +1,101 @@
+/* Import your main CSS first */
+
+
+  /* Navbar styling */
+/* Navbar styling */
+.navbar {
+  background-color: #d9d9d9; /* Grey background */
+  padding: 10px 30px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-weight: bold;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000000; /* Black text */
+  transition: color 0.3s;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.navbar a:hover {
+  color: #ffffff; /* White text on hover */
+  background-color: rgba(0, 0, 0, 0.2); /* Subtle background change on hover */
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: center; /* Centers the navbar items */
+}
+
+.navbar a {
+  font-size: 30px;
+  font-weight: normal; /* Makes the text bold */
+}
+
+/* Social links with Iconify icons */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Increased spacing between icons */
+    margin-top: 40px;
+    padding: 30px 0;
+    width: 100%;
+  }
+  
+  .social-links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* White icons */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for contrast */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .social-links a:hover {
+    transform: scale(1.15);
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Style the Iconify icons to be large */
+  .social-links .iconify {
+    width: 32px;
+    height: 32px;
+    color: white; /* Icons are white */
+  }
+  
+  .publication-entry:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+  }
+  
+  div[style=style="background-color: #f7f7f7; color: black; padding: 1em;border-radius: 25px;"]{
+    margin-left: 50px;
+    margin-right: 50px;
+     text-align: justify; /* Optional: for even text distribution */
+   }
+
+
+  .responsive-frame {
+   max-width: 1800px;
+   margin: 1em auto;
+   padding: clamp(12px, 2vw, 24px);
+   background-color: #f7f7f7;
+   border-radius: 25px;
+  }
+  
+  @media (max-width: 360px) {
+    .responsive-frame {
+      width: 100%;
+      margin: 0.5em auto;   /* tiny top/bottom gutter only */
+    }
+  }
