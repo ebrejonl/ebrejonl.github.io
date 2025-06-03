@@ -506,13 +506,10 @@ margin: 0 auto !important;
 body {
 
 background-color: #2e3440;
-
 background-size: cover;
 background-attachment: fixed;
 background-position: center;
-color: white; 
-font-family: 'Alice', serif; 
-line-height: 1.6;
+color: white; font-family: 'Alice', serif; line-height: 1.6;
 margin: 0;
 padding: 0;
 }
@@ -589,7 +586,7 @@ display: none;
 background-color: #d9d9d9; 
 padding: 10px 30px;
 text-align: center;
-position: sticky;
+position: relative;
 top: 0;
 z-index: 1000;
 font-weight: bold;
@@ -615,6 +612,38 @@ justify-content: center;
 .navbar a {
 font-size: 30px;
 font-weight: normal; 
+}
+.navbar {
+padding: 10px;
+
+justify-content: center;
+}
+.navbar {
+position: relative !important; 
+
+
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom,
+.navbar-sticky-top,
+.navbar-sticky-bottom {
+position: relative !important;
+top: auto !important;
+bottom: auto !important;
+z-index: auto !important;
+}
+
+.quarto-header {
+position: relative !important;
+top: auto !important;
+z-index: auto !important;
+}
+
+.quarto-header nav {
+position: relative !important;
+top: auto !important;
+z-index: auto !important;
 }
 
 
@@ -745,6 +774,11 @@ margin: 15px;
 }
 .navbar {
 padding: 10px;
+justify-content: center;
+position: relative !important;
+top: auto !important;
+bottom: auto !important;
+z-index: auto !important;
 }
 .social-links {
 gap: 20px;

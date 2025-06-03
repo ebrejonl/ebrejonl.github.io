@@ -9,7 +9,9 @@
 }
 
 
+/* Apply background image to the entire body */
 body {
+  /*background-color: #35464a;*/
   background-color: #2e3440;
     background-size: cover;
     background-attachment: fixed;
@@ -29,6 +31,8 @@ body {
 
 
 
+  
+  /* Main content container */
   body > .quarto-container {
     max-width: 900px;
     margin: 50px auto;
@@ -38,6 +42,7 @@ body {
     min-height: 80vh; 
   }
   
+
 
 .profile-pic {
   width: 200px;
@@ -49,6 +54,11 @@ body {
   object-fit: cover;
 }
 
+
+
+
+
+  
   .social-links {
     display: flex;
     justify-content: center;
@@ -63,7 +73,7 @@ body {
     justify-content: center;
     align-items: center;
     color: white; 
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.6);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -85,9 +95,8 @@ body {
     display: none;
   }
   
-  /* Navbar styling */
   .navbar {
-    background-color: #d9d9d9; 
+    background-color: #d9d9d9; /* Grey background */
     padding: 10px 30px;
     text-align: center;
     position: relative;
@@ -101,7 +110,7 @@ body {
   .navbar a {
     margin: 0 15px;
     text-decoration: none;
-    color: #000000; 
+    color: #000000; /* Black text */
     transition: color 0.3s;
     padding: 5px 10px;
     border-radius: 4px;
@@ -121,6 +130,7 @@ body {
   .navbar a {
     font-size: 30px;
     font-weight: normal; 
+  }
 
   .navbar {
     padding: 10px;
@@ -128,7 +138,7 @@ body {
   }
 
   .navbar {
-    position: relative !important; 
+    position: relative !important;
   }
 
 .navbar-fixed-top,
@@ -152,7 +162,7 @@ body {
     top: auto !important;
     z-index: auto !important;
 }
-
+  
 div[style="padding: 1em;"] {
     color: white;
     margin-left: 10%;
@@ -171,7 +181,7 @@ div[style="padding: 1em;"] {
 
   div[style="background-color: #f0f0f0; color: black; padding: 1em;"]{
     color: black;
-    text-align: justify; 
+    text-align: justify;
   }
   
   .project-grid {
@@ -191,7 +201,6 @@ div[style="padding: 1em;"] {
     margin: 0;
   }
   
-  /* your cards styling */
   .project-card {
     display: block;
     background-color: #d9d9d9;
@@ -231,6 +240,7 @@ div[style="padding: 1em;"] {
 
 
 
+
 .project-card::after {
   content: '';
   position: absolute;
@@ -252,10 +262,12 @@ div[style="padding: 1em;"] {
 
 
 
+
+
+
   .project-card img {
     width: 100%;
     height: 200px;
-    /*object-fit: cover;*/
     border-radius: 5px;
     object-fit: contain;
   }
@@ -263,7 +275,6 @@ div[style="padding: 1em;"] {
   .card-title {
     margin: 1rem;
     font-size: 1.2rem;
-     /*color: white;*/
      color: black;
   }
   
@@ -291,7 +302,6 @@ div[style="padding: 1em;"] {
   
 
   
-  /* Make content responsive */
   @media (max-width: 768px) {
     body > .quarto-container {
       padding: 15px;
@@ -328,7 +338,6 @@ div[style="padding: 1em;"] {
   }
 
 
-/* for the software */
 .software-grid {
   display: flex;
   flex-wrap: wrap;
@@ -351,7 +360,6 @@ div[style="padding: 1em;"] {
   max-width: 800px;
 }
 
-/* Image container inside card */
 .software-card img {
   width: 40%; 
   object-fit: cover;
@@ -359,7 +367,6 @@ div[style="padding: 1em;"] {
   display: block;
 }
 
-/* Text container inside card */
 .software-card .card-content {
   padding: 1rem;
   width: 60%;
@@ -367,8 +374,6 @@ div[style="padding: 1em;"] {
   flex-direction: column;
   justify-content: center;
 }
-
-
 
 
 .software-card:after {
