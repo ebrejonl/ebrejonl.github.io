@@ -9,16 +9,13 @@
 }
 
 
-/* Apply background image to the entire body */
 body {
-  /*background-color: #35464a;*/
   background-color: #2e3440;
-    /*background-image: url('images/water_dark.png'); /* Replace with your background image path */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    color: white; /* Changed text color to white */
-    font-family: 'Alice', serif; /* Changed font to Alice */
+    color: white; 
+    font-family: 'Alice', serif; 
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -32,19 +29,15 @@ body {
 
 
 
-  
-  /* Main content container */
   body > .quarto-container {
     max-width: 900px;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Changed to darker semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 8px;
-    min-height: 80vh; /* Ensure the container is tall enough */
+    min-height: 80vh; 
   }
-
-
-/* For images in project pages */
+  
 
 .profile-pic {
   width: 200px;
@@ -54,16 +47,12 @@ body {
   border-radius: 50%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   object-fit: cover;
-  /* border: 3px solid white; */
 }
 
-
-
-  /* Social links with Iconify icons */
   .social-links {
     display: flex;
     justify-content: center;
-    gap: 40px; /* Increased spacing between icons */
+    gap: 40px; 
     margin-top: 40px;
     padding: 30px 0;
     width: 100%;
@@ -73,8 +62,8 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: white; /* White icons */
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for contrast */
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.6); 
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -86,24 +75,22 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
   }
   
-  /* Style the Iconify icons to be large */
   .social-links .iconify {
     width: 32px;
     height: 32px;
-    color: white; /* Icons are white */
+    color: white; 
   }
   
-  /* Override any Solana template styles that might interfere */
   .quarto-title-meta {
     display: none;
   }
   
   /* Navbar styling */
   .navbar {
-    background-color: #d9d9d9; /* Grey background */
+    background-color: #d9d9d9; 
     padding: 10px 30px;
     text-align: center;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 1000;
     font-weight: bold;
@@ -114,35 +101,63 @@ body {
   .navbar a {
     margin: 0 15px;
     text-decoration: none;
-    color: #000000; /* Black text */
+    color: #000000; 
     transition: color 0.3s;
     padding: 5px 10px;
     border-radius: 4px;
   }
   
   .navbar a:hover {
-    color: #ffffff; /* White text on hover */
-    background-color: rgba(0, 0, 0, 0.2); /* Subtle background change on hover */
+    color: #ffffff; 
+    background-color: rgba(0, 0, 0, 0.2); 
   }
   
 
   .navbar {
     display: flex;
-    justify-content: center; /* Centers the navbar items */
+    justify-content: center; 
   }
   
   .navbar a {
     font-size: 30px;
-    font-weight: normal; /* Makes the text bold */
+    font-weight: normal; 
+
+  .navbar {
+    padding: 10px;
+    justify-content: center;
   }
 
-  /* Text color override for Welcome section */
-  /* Add margins to the welcome text section */
+  .navbar {
+    position: relative !important; 
+  }
+
+.navbar-fixed-top,
+.navbar-fixed-bottom,
+.navbar-sticky-top,
+.navbar-sticky-bottom {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    z-index: auto !important;
+}
+
+.quarto-header {
+    position: relative !important;
+    top: auto !important;
+    z-index: auto !important;
+}
+
+.quarto-header nav {
+    position: relative !important;
+    top: auto !important;
+    z-index: auto !important;
+}
+
 div[style="padding: 1em;"] {
     color: white;
     margin-left: 10%;
     margin-right: 10%;
-    text-align: justify; /* Optional: for even text distribution */
+    text-align: justify; 
   }
   
 
@@ -150,15 +165,13 @@ div[style="padding: 1em;"] {
     color: white;
     margin-left: 10%;
     margin-right: 10%;
-    text-align: justify; /* Optional: for even text distribution */
+    text-align: justify; 
   }
 
 
   div[style="background-color: #f0f0f0; color: black; padding: 1em;"]{
     color: black;
-   /* margin-left: 10%;   */
-   /* margin-right: 10%;*/
-    text-align: justify; /* Optional: for even text distribution */
+    text-align: justify; 
   }
   
   .project-grid {
@@ -182,7 +195,6 @@ div[style="padding: 1em;"] {
   .project-card {
     display: block;
     background-color: #d9d9d9;
-   /* background-color: rgba(255,255,255,0.1);*/
     border-radius: 15px;
     overflow: hidden;
     text-decoration: none;
@@ -191,7 +203,7 @@ div[style="padding: 1em;"] {
   
 
   .project-card.completed::after {
-    content: "\2714"; /* Unicode check mark */
+    content: "\2714"; 
     position: absolute;
     top: 0px;
     left: 0px;
@@ -199,7 +211,6 @@ div[style="padding: 1em;"] {
     color: green;
   }
 
-/* In-progress three-dot animation */
  .project-card.inprogress::after {
    content: "";
    position: absolute;
@@ -220,7 +231,6 @@ div[style="padding: 1em;"] {
 
 
 
-
 .project-card::after {
   content: '';
   position: absolute;
@@ -237,9 +247,6 @@ div[style="padding: 1em;"] {
   background-color: rgba(255,255,255,0);
   transition: all 0.4s ease-in-out;
 }
-
-
-
 
 
 
@@ -270,7 +277,6 @@ div[style="padding: 1em;"] {
     overflow: hidden; /* hide overflow */
   }
   
-  /* Responsive adjustments */
   @media (max-width: 900px) {
     .project-card {
       flex: 0 0 calc(50% - 1rem);
@@ -294,6 +300,11 @@ div[style="padding: 1em;"] {
     
     .navbar {
       padding: 10px;
+      justify-content: center;
+      position: relative !important;
+      top: auto !important;
+      bottom: auto !important;
+      z-index: auto !important;
     }
     
     .social-links {
@@ -329,20 +340,20 @@ div[style="padding: 1em;"] {
 }
 
 .software-card {
-  position: relative; /* <<< This is essential */
-  display: flex; /* changed from block */
+  position: relative; 
+  display: flex; 
   background-color: #d9d9d9;
   border-radius: 15px;
   overflow: hidden;
   text-decoration: none;
   transition: background-color 0.5s ease;
-  width: 100%; /* take full row or adjust as needed */
+  width: 100%; 
   max-width: 800px;
 }
 
 /* Image container inside card */
 .software-card img {
-  width: 40%; /* adjust as needed */
+  width: 40%; 
   object-fit: cover;
   height: 100%;
   display: block;
@@ -380,4 +391,3 @@ div[style="padding: 1em;"] {
 	   -moz-transition: all 0.4s ease-in-out;
 	        transition: all 0.4s ease-in-out;
 }
-  
